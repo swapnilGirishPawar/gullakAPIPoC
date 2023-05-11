@@ -1,0 +1,19 @@
+[project]
+name = "Gullak_Automation"
+version = "0.0.1"
+authors = [{ name = "Prathija Etagi", email = "prathija.j@moolya.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.robotidy]
+spacecount = 4
+line-length = 120
+configure = [
+    "SplitTooLongLine:enabled=True",
+    "AlignVariablesSection:skip_types=dict,list,scalar",
+    "SplitTooLongLine:split_on_every_arg=False",
+    "SplitTooLongLine:split_on_every_value=False",
+]
+
+[tool.black]
+line-length = 120
